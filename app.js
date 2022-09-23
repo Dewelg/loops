@@ -1,5 +1,5 @@
 //exercise1
-/*let i = 0;
+let i = 0;
 
 while(i <= 100){
     if (i % 2 == 0){
@@ -85,7 +85,7 @@ for (i = 0; i < n; i++){
 
     }
     
-} */
+} 
 
 //exercise5
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
@@ -94,11 +94,14 @@ let n = Math.round(Math.random() * (1000 - 1) + 1);
 let start = Math.round(Math.random() * (10 - 1) + 1);
 
 for (i = start; i < n; i++){
-    console.log(i);
-    if (i = fizzDivisor){
-        console.log('FIZZ');
+    ;
+    let output = '';
+    if (i %  fizzDivisor == 0){
+       output += 'FIZZ';
     }
-    if (i = buzzDivisor){
-        console.log('BUZZ');
+    if (i % buzzDivisor == 0){
+        output += 'BUZZ';
     }
+
+    console.log(`${i} ${output}`);
 }
